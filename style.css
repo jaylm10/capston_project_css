@@ -1,0 +1,124 @@
+body{
+    color: #40514e;
+    margin: 0;
+    text-align: center;
+    font-family: "Merriweather", serif;
+}
+.top-container {
+    background-color: #e4f9f5;
+    position: relative;
+    padding-top: 100px;
+}
+.top-cloud {
+    position: absolute;
+    right: 300px;
+    top: 40px;
+}
+div {
+    display: block;
+}
+h1 {
+    color: #66bfbf;
+    font-size: 5.625rem;
+    margin: 50px auto 0 auto;
+    font-family: "Sacramento", cursive;
+}
+h2 {
+    color: #66bfbf;
+    font-family: "Montserrat", sans-serif;
+    font-size: 2.5rem;
+    font-weight: normal;
+    padding-bottom: 10px;
+}
+.bottom-cloud {
+    position: absolute;
+    left: 250px;
+    bottom: 300px;
+}
+
+.me{
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    margin-top: 5%;
+}
+.border{
+    border: 2px solid black;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+.grid-container{
+   
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
+    grid-template-rows: repeat(1, 1fr);
+    width: 50%;
+    margin:  50px auto 0 auto;
+    text-align: left;
+    row-gap: 2rem;
+}
+.p{
+    font-size: 21px;
+    display: block;
+}
+.movie{
+    width: 250px;
+}
+.btn{
+    background-color: #11cdd4;
+    color: white;
+    font-size: 20px;
+    margin-top: 25px;
+}
+#footer{
+    background-color: #66bfbf;
+    margin-top: 5%;
+}
+
+@media (max-width: 780px) {
+
+   
+    
+    .top-cloud {
+        
+        width: 80px;
+        top: 80px;
+        right: 60px; /* Adjust the position of the top cloud for smaller screens */
+    }
+
+    .bottom-cloud {
+        width: 80px;
+        top: 250px;
+        left: 30px; /* Adjust the position of the bottom cloud for smaller screens */
+    }
+
+    h1 {
+        font-size: 2rem; /* Decrease the font size for smaller screens */
+    }
+
+    h2 {
+        font-size: 1rem; /* Decrease the font size for smaller screens */
+    }
+    .mountain{
+        width: 250px;
+    }
+
+    .me{
+        width: 100px;
+        height: 100px;
+    }
+
+    .cat{
+        width: 150px;
+    }
+    .movie{
+        width: 150px;
+    }
+    .p{
+        font-size: 13px;
+    }
+    .grid-container{
+        column-gap: 5px;
+    }
+}
